@@ -193,12 +193,6 @@ function addItem(){
 
 
 
-const menu = document.getElementById('menu');
-const item = document.getElementById('item-1');
-
-function deleteItem(){
-    menu.removeChild(item);
-}
 
 
 
