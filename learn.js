@@ -1,4 +1,4 @@
-                // Data-type//
+                //Data-type//
 
 
 
@@ -54,12 +54,16 @@ function kai(name){
 }
 console.log(kai("jake"));
 
+function som(name){
+    return "I love you "+name+" I will stay with you :)";
+}
+console.log(som("PUYA"));
 
-
-
-
-
-
+function num(x,y){
+    let numb = x+y*x/2*x+y
+    return "result "+numb;
+}
+console.log(num(100, 29));
 
 
 
