@@ -196,6 +196,155 @@ function addItem(){
 
 
 
+let hour = "13";
+switch(true){
+    case (hour >= 5 && hour < 12):
+        console.log("goodmornig");
+            break;
+    case (hour >= 12 && hour < 17):
+        console.log("goodafternoon");
+            break;
+    case (hour >= 17 && hour < 20):
+        console.log("goodevening");
+            break;
+    default: 
+        console.log("goodnigth");
+}
+
+
+
+
+let item = 2;
+    switch(item){
+        case 1 : console.log("Coke");
+            break;
+        case 2 : console.log("Pepsi");
+            break;
+        case 3 : console.log("Water");
+            break;
+        case 4 : console.log("Coffee");
+            break;
+        default : console.log("Invalid Selection");
+    }
+
+
+
+let score = -120;
+switch(true){         
+    case (score <= 100 && score >= 80):
+        console.log("Grade A");
+            break;
+    case (score <= 79 && score >= 70):
+        console.log("Grade B");
+            break;
+    case (score <= 69 && score >= 60):
+        console.log("Grade C");
+            break;
+    case ( score < 60 && score >= 0):
+        console.log("Grade F");
+            break;
+    default:console.log("Invalid score");
+}
+
+
+const message = ["goodnigth","goodnigth","goodnigth","goodnigth","goodnigth","goodnigth",
+                "goodmornig","goodmornig","goodmornig","goodmornig","goodmornig","goodmornig",
+                "goodafternoon","goodafternoon","goodafternoon","goodafternoon","goodafternoon","goodafternoon",
+                "goodevening","goodevening","goodevening","goodevening","goodevening","goodevening",
+                ];
+let hour = 10;
+console.log(message[hour]);
+
+
+
+
+let baseDemage = 100;
+let weaponType = "staff";
+let isCritical = true;
+let mutiplier = 0;
+switch(weaponType){
+    case "sword" :
+        mutiplier = 1.2;
+        break;
+    case "bow" : 
+        mutiplier = 1.5;
+        break;
+    case "staff" : 
+        mutiplier = 0.8;
+        break;
+    default : 
+        mutiplier = 1.0;
+}
+let finalDemage = baseDemage*mutiplier;
+if(isCritical == true){
+    finalDemage *= 2;
+}
+console.log("Final Demage is: " + finalDemage);
+
+
+let cart = [
+    { name: "shirt", price: 300, amount: 2},
+    { name: "leggings", price: 1200, amount: 1},
+    { name: "shock", price: 50, amount: 5}
+];
+let totalPrice = 0;
+cart.forEach(function(item) {
+    totalPrice += (item.price * item.amount);
+})
+console.log(totalPrice);
+
+let fruitShop = [
+    { fruit: "orange", price: 20, amount:2},
+    { fruit: "apple", price: 10, amount:3},
+    { fruit: "lemon", price: 24, amount:8}
+];
+let total = 0;
+fruitShop.forEach(function(counter){
+    total += (counter.price * counter.amount);
+})
+console.log(total);
+
+let priceItem = [
+    { name: "computer", price: 200, amount:3},
+    { name: "phone", price: 190, amount:5},
+    { name: "glasses", price: 60, amount:10},
+    { name: "lamp", price: 40, amount:20}
+];
+let total = 0;
+let order = 5;
+priceItem.forEach(function(couter) {
+    total += couter.price * couter.amount;
+})
+total -= order;
+console.log(total);
+
+let employees = [
+    { name: "ZASK", score: 95, department:"IT"},
+    { name: "MICK", score:70, department:"Marketing"},
+    { name: "JANE", score:60, department:"Design"}
+];
+let bonusCount = 0;
+employees.forEach(function(person) {
+    if (person.department === "IT" && person.score > 80){
+        bonusCount++;
+    }
+})
+console.log(bonusCount);
+
+let  techer = [
+    { name: "Tra", subject:"Math", level: "Pro"},
+    { name: "Tom", subject:"English", level: "Pro"},
+    { name: "Kai", subject:"Biology", level: "low"},
+    { name: "Jake", subject:"sport", level: "low"},
+    { name: "Theara", subject:"Physic", level: "Meduim"}
+];
+let bonus = 0;
+techer.forEach(function(person) {
+    if(person.level === "Pro" || person.level === "Meduim"){
+        bonus++;
+    }
+})
+console.log(bonus);
 
 
 
