@@ -1,87 +1,32 @@
-                //Data-type//
 
 
+function submit(){
+    let Name =
+    document.getElementById("textName").value;
+    if( Name === "Hello"){
+        textName.style.border = "solid blue";
+        la1.innerHTML = "Okay";
+        la1.style.textShadow = "-2px 2px 5px blue";
 
+    } else{
+        
+        textName.style.border = "solid red";
+        la1.innerHTML = "I cracked your account!";
+        la1.style.textShadow = "-2px 2px 5px red";
+    }
 
-function myFunction(num1, num2) {
-    return num1 * num2;
+    let Pass =
+    document.getElementById("textPass").value;
+    
+    document.getElementById("la2");
+    if( Pass === "Dev"){
+        textPass.style.border = "solid blue";
+        la2.innerHTML = "Hello junior";
+        la2.style.textShadow = "-2px 2px 5px blue";
+
+    } else {
+        la2.innerHTML = "I gonna kill you";
+        la2.style.textShadow = "-2px 2px 5px red";
+        textPass.style.border = "solid red";
+    }
 }
-
-console.log(myFunction(10, 20));
-
-
-
-
-
-
-function hak(name) {
-    return "Hello ah " + name + " anh sl hg";
-}
-
-console.log(hak("Sothea"));
-
-
-
-function myId(id){
-    return id;
-}
-console.log(myId(23420394804));
-
-
-
-function functionName(number) {
-    return number;
-}
-let sum = functionName(13028340284);
-sum = 10;
-sam = 80;
-som = sum * sam;
-
-console.log(som);
-
-function nale(jake){
-    let name = "jake";
-    console.log(name)
-    return jake;
-}
-console.log(nale("grock"));
-
-
-
-function kai(name){
-    var age = 17; 
-    return "Hello, My name is " + name + " I am " +  age + " years old";
-}
-console.log(kai("jake"));
-
-function som(name){
-    return "I love you "+name+" I will stay with you :)";
-}
-console.log(som("PUYA"));
-
-function num(x,y){
-    let numb = x+y*x/2*x+y
-    return "result "+numb;
-}
-console.log(num(100, 29));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
